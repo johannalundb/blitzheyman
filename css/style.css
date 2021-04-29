@@ -111,13 +111,13 @@ p {
 }
 
 
-.grid-item img:hover {
+/*.grid-item img:hover {
   width: 200%;
   left: auto;
   height: auto;
   object-fit: cover;
   transform-origin: center center;
-}
+}*/
 
 
 /*TYPOGRAPHY*/
