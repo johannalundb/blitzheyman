@@ -103,6 +103,7 @@ p {
   height: 16.667vw;
   object-fit: cover;
   box-shadow: 0px 0px 7px #cbff00;
+  transition: 0.5s;
 }
 
 .grid-item p {
