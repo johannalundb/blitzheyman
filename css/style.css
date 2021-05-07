@@ -64,6 +64,7 @@ p {
   top:0;
   /*pointer-events: none;*/
   overflow: hidden;
+  /*filter: blur(1px);*/
 
 }
 
@@ -183,14 +184,15 @@ p {
   /*width: 10vw;
   height: 10vw;*/
   object-fit: cover;
-  box-shadow: 0px 0px 10px #cbff00;
+  box-shadow: 0px 0px 20px #cbff00;
   /*transition: 0.5s;*/
   cursor: pointer;
 
 }
 
 .grid-item p {
-  font-size: 16px;
+  font-size: 6vw;
+  color: white;
 }
 
 
