@@ -11,20 +11,26 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- import the webpage's javascript file -->
+    <script src="slider.js"></script>
     <!-- <script src="js/jquery-3.3.1.min.js" defer></script>
     <script src="js/script.js" defer></script> -->
   </head>  
 
   <body>
-    <div class="sky-background sky-background-medium"><img src="assets/bg/himmel.jpg"><img loading="lazy" src="assets/bg/himmel.jpg"></div>
-     <div class="sky-background sky-background-big"><img src="assets/bg/Himmel webb 8 rutor.jpg"><img loading="lazy" src="assets/bg/Himmel webb 8 rutor.jpg"></div>
-      <div class="sky-background sky-background-small"><img src="assets/bg/Himmel mobil.jpeg"><img loading="lazy" src="assets/bg/Himmel mobil.jpeg"></div>
+    <div id="amadeus">
+
+    <div id="background-container">
+        <div class="sky-background sky-background-medium"><img src="assets/bg/himmel.jpg"><img loading="lazy" src="assets/bg/himmel.jpg"></div>
+         <div class="sky-background sky-background-big"><img src="assets/bg/Himmel webb 8 rutor.jpg"><img loading="lazy" src="assets/bg/Himmel webb 8 rutor.jpg"></div>
+          <div class="sky-background sky-background-small"><img src="assets/bg/Himmel mobil.jpeg"><img loading="lazy" src="assets/bg/Himmel mobil.jpeg"></div>
+
+    </div>
 
     <div class="menu">
         <div class="grid-item"></div>
-        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br><img loading="lazy" src="assets/heart.png" id="heart"></a></div>
-        <div class="grid-item"><a href="">Jewelry</a></div>
-        <div class="grid-item"><a href="">Sculpture</a></div>
+        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br><img src="assets/heart.png" id="heart"></a></div>
+        <div class="grid-item"><a href="index.html">Jewelry</a></div>
+        <div class="grid-item"><a href="index.html">Sculpture</a></div>
         <div class="grid-item"><a href="about.html">About</a></div>
         <div class="grid-item"></div>
       </div>
@@ -37,52 +43,114 @@
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
         <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-1.jpg" onclick="select(1)" ></div>
+        <div class="grid-item empty"><p class="info-text">Pewter, glass and resin. <br>2019</p></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-2.jpg" onclick="select(2)"></div>
         <div class="grid-item empty"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
-        <div class="grid-item empty"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring yellow.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-3.jpg" onclick="select(3)"></div>
         <div class="grid-item empty"></div>
         <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
         <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-4.jpg" onclick="select(4)"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-5.jpg" onclick="select(5)"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring yellow.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-6.jpg" onclick="select(6)"></div>
         <!-- Ny rad -->
         <div class="grid-item"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-7.jpg" onclick="select(7)"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring yellow.jpg"></div>
-        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-8.jpg" onclick="select(8)"></div>
         <div class="grid-item"></div>
         <!-- Ny rad -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-9.jpg" onclick="select(9)"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-10.jpg" onclick="select(10)"></div>
+        <div class="grid-item"></div>
         <div class="grid-item"></div>
         <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-11.jpg" onclick="select(11)"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-12.jpg" onclick="select(12)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-13.jpg" onclick="select(13)"></div>
+        <div class="grid-item"></div>
+        <!-- Ny rad -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-14.jpg" onclick="select(14)"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/ring 4.jpg"></div>
-        <div class="grid-item"><p>88</p></div>
-        <div class="grid-item"><img loading="lazy" src="assets/images/blue.jpg"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-15.jpg" onclick="select(15)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-16.jpg" onclick="select(16)"></div>
+        <!-- Ny rad -->
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-17.jpg" onclick="select(17)"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-18.jpg" onclick="select(18)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-19.jpg" onclick="select(19)"></div>
+        <div class="grid-item"></div>
+        <!-- Ny rad -->
+        
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-20.jpg" onclick="select(20)"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-21.jpg" onclick="select(21)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-22.jpg" onclick="select(22)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <!-- Ny rad -->
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-23.jpg" onclick="select(23)"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-24.jpg" onclick="select(24)"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-25.jpg" onclick="select(25)"></div>
+        <div class="grid-item"></div>
+        <!-- Ny rad -->
+        <div id="footer">
+            <div class="grid-item empty">Hannah Blitz Heyman</div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"><p></p></div>
+            <div class="grid-item empty"></div>
+        </div>
       
-
-
       </div>
 
+  </div>
+
+      <div id="slideshow">
+                <div onclick="changeSlide(+1)" class="item"><img src="assets/jewelry/HBH-Jewelry-1.jpg"> <p>Pewter, glass and resin. 2019</p></div>
+                <img src="assets/jewelry/HBH-Jewelry-1.jpg" class="item" onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-2.jpg" class="item"  onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-3.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-4.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-5.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-6.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-7.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-8.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-9.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-10.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-11.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-12.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-13.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-14.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-15.jpg" class="item" onclick="changeSlide(+1)"  />
+                <img src="assets/jewelry/HBH-Jewelry-16.jpg" class="item"  onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-17.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-18.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-19.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-20.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-21.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-22.jpg" class="item" onclick="changeSlide(+1)" />
+                <img src="assets/jewelry/HBH-Jewelry-23.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-24.jpg" class="item"  onclick="changeSlide(+1)"/>
+                <img src="assets/jewelry/HBH-Jewelry-25.jpg" class="item"  onclick="changeSlide(+1)"/>
+ 
+
+
+                <a onclick="closeSlideshow()">Close</a>
+            </div>
 
     
   </body>
