@@ -5,146 +5,513 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="keywords" content="Jewelry, Hannah, Blitz-Heyman, Blitz, Heyman, Artist, Stockholm, Konstfack">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
     <!-- import the webpage's javascript file -->
-    <script src="js/slider.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-    
+    <script src="js/slider.js"></script> 
     <!-- <script src="js/jquery-3.3.1.min.js" defer></script> -->
     <!-- <script src="js/script.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+    <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
   </head>  
 
   <body>
-   
-
     <div id="background-container">
-        <div class="sky-background sky-background-medium"><img src="assets/bg/himmel.jpg" loading="lazy" src="assets/bg/himmel.jpg" class="thumbnail"></div>
-         <div class="sky-background sky-background-big"><img src="assets/bg/Himmel webb 8 rutor.jpg" loading="lazy" src="assets/bg/Himmel webb 8 rutor.jpg" class="thumbnail"></div>
-          <div class="sky-background sky-background-small"><img src="assets/bg/Himmel mobil.jpeg" loading="lazy" src="assets/bg/Himmel mobil.jpeg" class="thumbnail"></div>
+        <div class="sky-background sky-background-medium"><img src="assets/bg/himmel.jpg" loading="lazy" src="assets/bg/himmel.jpg" class=""></div>
+         <div class="sky-background sky-background-big"><img src="assets/bg/Himmel webb 8 rutor.jpg" loading="lazy" src="assets/bg/Himmel webb 8 rutor.jpg" class=""></div>
+          <div class="sky-background sky-background-small"><img src="assets/bg/Himmel mobil.jpeg" loading="lazy" src="assets/bg/Himmel mobil.jpeg" class=""></div>
 <img src="">
     </div>
      <div id="amadeus">
     <div class="menu">
         <div class="grid-item"></div>
         <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br><img src="assets/heart.png" id="heart"></a></div>
-        <div class="grid-item"><a href="index.html">Jewelry</a></div>
-        <div class="grid-item"><a href="index.html">Sculpture</a></div>
+        <div class="grid-item"><a href="jewelry.html" class="active">Jewelry</a></div>
+        <div class="grid-item"><a href="sculpture.html">Sculpture</a></div>
         <div class="grid-item"><a href="about.html">About</a></div>
         <div class="grid-item"></div>
       </div>
 
-      <div class="grid-container thumbnail">
+      <div class="grid-container ">
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
         <div class="grid-item empty"></div>
-        <!-- Ny rad -->
+        <!--............................................ROW 1............................................-->
 
-        <!-- ITEM 1 -->
-        <div class="grid-item empty"><p class="image-description-left">
-                1. Blank signet ring <br> 
-                Silver <br> 
-                (please <a href=""> contact</a> to order)
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty"><p class="image-description-left" onclick="select(1)">
+                <span class="title">Blank signet ring </span>
+                <span class="material">Silver </span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
             </p></div>
+
+        <!-- ::::::::COLUMN 2:::::::: -->
         <div class="grid-item ">
-            <img loading="lazy" src="assets/jewelry/HBH-Jewelry-25.jpg" onclick="select(1)">
-        </div>
+            <img loading="lazy" src="assets/jewelry/HBH-Jewelry-25.jpg" onclick="select(1)"></div>
 
-        <!-- ITEM 2 -->
-        <div class="grid-item empty"><p class="image-description-left">
-                2. Flower necklace <br> 
-                Anodized aluminium and pewter <br> 
-                (please <a href=""> contact</a> to order)
+            <p class="mobile-text">
+                <span class="title">Blank signet ring </span>
+                <span class="material">Silver </span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p>
+
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left"onclick="select(2)">
+                <span class="title">Flower necklace ❀</span> 
+                <span class="material">Anodized aluminium and pewter</span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
             </p></div>
+
+        <!-- ::::::::COLUMN 4:::::::: -->
         <div class="grid-item">
-            <img loading="lazy" src="assets/jewelry/HBH-Jewelry-24.jpg" onclick="select(2)">
-        </div>
+            <img loading="lazy" src="assets/jewelry/HBH-Jewelry-24.jpg" onclick="select(2)"></div>
 
-        <!-- ITEM 3 -->
-        <div class="grid-item empty"><p class="image-description-left">
-                3. Mix of gem stone rings 
-                <br> Silver, agate and synthetic ruby 
-                <br> (please <a href=""> contact</a> to order)
+            <p class="mobile-text">
+                <span class="title">Flower necklace ❀</span> 
+                <span class="material">Anodized aluminium and pewter</span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty"><p class="image-description-left" onclick="select(3)">
+                <span class="title">Mix of gem stone rings </span>
+                <span class="material">Silver, agate and synthetic ruby</span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
             </p></div>
 
-        <div class="grid-item jewelry-23">
-            <img class="" loading="lazy" src="assets/jewelry/HBH-Jewelry-23.jpg" onclick="select(3)"
-            ></div>
-        <div class="grid-item empty "></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item">
+            <img loading="lazy" src="assets/jewelry/HBH-Jewelry-23.jpg" onclick="select(3)"></div>
 
-        <!-- Ny rad -->
-        <div class="grid-item "></div>
+            <p class="mobile-text">
+                <span class="title">Mix of gem stone rings </span>
+                <span class="material">Silver, agate and synthetic ruby</span>
+                <span class="year">2021</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p>
+
+        <!--............................................ROW 2............................................-->
+
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty"></div>
+
+        <!-- ::::::::COLUMN 2:::::::: -->
+       <div class="grid-item empty"><p class="image-description-left" onclick="select(4)">
+                <span class="title">Attachment continuum #5 </span>
+                <span class="material">Fish bate, anodized aluminium, string and lanyard hook</span>
+                <span class="year">2020</span>
+            </p></div>
+        
+        <!-- ::::::::COLUMN 3:::::::: -->
         <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-22.jpg" onclick="select(4)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-21.jpg" onclick="select(5)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-20.jpg" onclick="select(6)"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-19.jpg" onclick="select(7)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-18.jpg" onclick="select(8)"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-17.jpg" onclick="select(9)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-16.jpg" onclick="select(20)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-15.jpg" onclick="select(11)"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-14.jpg" onclick="select(12)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-13.jpg" onclick="select(13)"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-12.jpg" onclick="select(14)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-11.jpg" onclick="select(15)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-10.jpg" onclick="select(16)"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-9.jpg" onclick="select(17)"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-8.jpg" onclick="select(18)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-7.jpg" onclick="select(19)"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-6.jpg" onclick="select(20)"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-5.jpg" onclick="select(21)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-4.jpg" onclick="select(22)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-3.jpg" onclick="select(23)"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-2.jpg" onclick="select(24)"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-1.jpg" onclick="select(25)"></div>
-        <div class="grid-item"></div>
-        <!-- Ny rad -->
 
+        <p class="mobile-text">
+            <span class="title">Attachment continuum #5 </span>
+            <span class="material">Fish bate, anodized aluminium, string and lanyard hook</span>
+            <span class="year">2020</span>
+         </p>
+    
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item empty"></div>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-21.jpg" onclick="select(5)"></div>
+
+        <p class="mobile-text">
+            <span class="title">Attachment continuum #5 </span>
+            <span class="material">Fish bate, anodized aluminium, string and lanyard hook</span>
+            <span class="year">2020</span>
+         </p>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item empty"><p class="image-description-right" onclick="select(5)">
+                <span class="title">Attachment continuum #5 </span>
+                <span class="material">Fish bate, anodized aluminium, string and lanyard hook</span>
+                <span class="year">2020</span>
+            </p></div>
+
+        <!--............................................ROW 3............................................-->
+
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-20.jpg" onclick="select(6)"></div>
+
+        <p class="mobile-text">
+            <span class="title">Attachment continuum #4</span> 
+            <span class="material">Aluminium, lanyard, safety hook, anodized aluminium, thread and aluminium pipe</span>
+            <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 2:::::::: -->        
+        <div class="grid-item empty" ><p class="image-description-right"onclick="select(6)">
+                <span class="title">Attachment continuum #4</span> 
+                <span class="material">Aluminium, lanyard, safety hook, anodized aluminium, thread and aluminium pipe</span>
+                <span class="year">2020</span>
+            </p></div>
+
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left"onclick="select(7)">
+                <span class="title">Attachment continuum #4</span> 
+                <span class="material">Aluminium, lanyard, safety hook, anodized aluminium, thread and aluminium pipe</span>
+                <span class="year">2020</span>
+            </p></div>
+
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-19.jpg" onclick="select(7)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #4</span> 
+                <span class="material">Aluminium, lanyard, safety hook, anodized aluminium, thread and aluminium pipe</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left"onclick="select(8)">
+                <span class="title">Attachment continuum #3</span> 
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+            </p></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-18.jpg" onclick="select(8)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #3</span> 
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!--............................................ROW 4............................................-->
+ 
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty"></div>
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-17.jpg" onclick="select(9)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #3</span> 
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-right"onclick="select(9)">
+                <span class="title">Attachment continuum #3</span> 
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+            </p></div>
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left"onclick="select(10)">
+                <span class="title">Attachment continuum #2</span> 
+                <span class="material">Aluminium, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+            </p></div>
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-16.jpg" onclick="select(10)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #2</span> 
+                <span class="material">Aluminium, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item empty"></div>
+
+        <!--............................................ROW 5............................................-->
         
-      
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty"></div>
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(11)">
+                <span class="title">Attachment continuum #1</span>  
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+            </p></div>
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-15.jpg" onclick="select(11)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #1</span>  
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-14.jpg" onclick="select(12)"></div> <!-- Dessa hör ihop -->
+
+        <p class="mobile-text">
+                <span class="title">Attachment continuum #1</span>  
+                <span class="material">Aluminium, lanyard, safety hook and anodized aluminium</span>
+                <span class="year">2020</span>
+        </p>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(13)">
+                <span class="title">Bespoke love rings</span>  
+                <span class="material">Silver</span>
+                <span class="year">2020</span>
+            </p></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-13.jpg" onclick="select(13)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Bespoke love rings</span>  
+                <span class="material">Silver</span>
+                <span class="year">2020</span>
+        </p>
+
+
+        <!--............................................ROW 6............................................-->
+
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(14)">
+                <span class="title">Mix of gem stone jewelry</span>  
+                <span class="material">Silver, ruby, diamond and Colombian emerald</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-12.jpg" onclick="select(14)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Mix of gem stone jewelry</span>  
+                <span class="material">Silver, ruby, diamond and Colombian emerald</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item"></div>
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(15)">
+                <span class="title"><3 necklace with pearls</span>  
+                <span class="material">Silver and fresh water pearls</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-11.jpg" onclick="select(15)"></div>
+
+        <p class="mobile-text">
+                <span class="title"><3 necklace with pearls</span>  
+                <span class="material">Silver and fresh water pearls</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item empty"></div>
+
+
+        <!--............................................ROW 7............................................-->
+
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-10.jpg" onclick="select(16)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Big chain</span>  
+                <span class="material">Silver</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-right" onclick="select(16)">
+                <span class="title">Big chain</span>  
+                <span class="material">Silver</span>
+                <span class="year">2020</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-9.jpg" onclick="select(17)"></div>
+
+        <p class="mobile-text"></p>
+
+        <!-- ::::::::COLUMN 4:::::::: -->
+
+        <p class="mobile-text">
+                <span class="title">Earrings <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, resin, glue and stainless steel</span>
+                <span class="year">2019</span>
+        </p>
+
+        <div class="grid-item empty" ><p class="image-description-right" onclick="select(17)">
+                <span class="title">Earrings <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, resin, glue and stainless steel</span>
+                <span class="year">2019</span>
+            </p></div>
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-8.jpg" onclick="select(18)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Bracelet <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, fresh water pearl and glue</span>
+                <span class="year">2019</span>
+        </p>
+
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-right" onclick="select(18)">
+                <span class="title">Bracelet <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, fresh water pearl and glue</span>
+                <span class="year">2019</span>
+            </p></div>
+
+        <!--............................................ROW 8............................................-->
+
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(19)">
+                <span class="title">Rings <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, glass and resin</span>
+                <span class="year">2019</span>
+            </p></div>
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-7.jpg" onclick="select(19)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Rings <br> (part of bachelor project)</span>  
+                <span class="material">Pewter, glass and resin</span>
+                <span class="year">2019</span>
+        </p>
+
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(20)">
+                <span class="title"><3 ring</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-6.jpg" onclick="select(20)"></div>
+
+        <p class="mobile-text">
+                <span class="title"><3 ring</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(21)">
+                <span class="title"><3 ring</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-5.jpg" onclick="select(21)"></div>
+
+        <p class="mobile-text">
+                <span class="title"><3 ring</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+
+        <!--............................................ROW 9............................................-->
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item empty"></div>
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item empty"></div>
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-4.jpg" onclick="select(22)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Mix of rings</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-right" onclick="select(22)">
+                <span class="title">Mix of rings</span>  
+                <span class="material">Silver</span>
+                <span class="year">2019</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty"></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item empty"></div>
+
+        <!--............................................ROW 10............................................-->
+        <!-- ::::::::COLUMN 1:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-3.jpg" onclick="select(23)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Gravel rock ring</span>  
+                <span class="material">Silver and agate</span>
+                <span class="year">2019</span>
+        </p>
+
+        <!-- ::::::::COLUMN 2:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-right" onclick="select(23)">
+                <span class="title">Gravel rock ring</span>  
+                <span class="material">Silver and agate</span>
+                <span class="year">2019</span>
+            </p></div>
+        <!-- ::::::::COLUMN 3:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(24)">
+                <span class="title"><3 necklace</span>  
+                <span class="material">Silver</span>
+                <span class="year">2017</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 4:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-2.jpg" onclick="select(24)"></div>
+
+        <p class="mobile-text">
+                <span class="title"><3 necklace</span>  
+                <span class="material">Silver</span>
+                <span class="year">2017</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <!-- ::::::::COLUMN 5:::::::: -->
+        <div class="grid-item empty" ><p class="image-description-left" onclick="select(25)">
+                <span class="title">Split heart necklaces</span>  
+                <span class="material">Silver</span>
+                <span class="year">2017</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+            </p></div>
+        <!-- ::::::::COLUMN 6:::::::: -->
+        <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-1.jpg" onclick="select(25)"></div>
+
+        <p class="mobile-text">
+                <span class="title">Split heart necklaces</span>  
+                <span class="material">Silver</span>
+                <span class="year">2017</span>
+                <a href="mailto:heymanhannah@gmail.com"> Please contact to order</a>
+        </p>
+
+        <p class="mobile-text" style="margin: 120px 0 80px 0; height: 20px;">
+                <span class="title">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Hannah Blitz Heyman</span>
+        </p>
+
+
       </div>
+
+      <div id="copyright">
+          <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Hannah Blitz Heyman</p>
+        </div>
+
+        </div> <!-- end of amadeus -->
+      
 
   </div>
 
       <div id="slideshow">
-                <!-- <div onclick="changeSlide(+1)" class="item"><img src="assets/jewelry/HBH-Jewelry-1.jpg"> <p>Pewter, <a href="about.html"> glass and</a> resin. 2019</p></div> -->
                 <img src="assets/jewelry/HBH-Jewelry-25.jpg" class="item" onclick="changeSlide(+1)"/>
                 <img src="assets/jewelry/HBH-Jewelry-24.jpg" class="item"  onclick="changeSlide(+1)" />
                 <img src="assets/jewelry/HBH-Jewelry-23.jpg" class="item" onclick="changeSlide(+1)" />
@@ -171,25 +538,34 @@
                 <img src="assets/jewelry/HBH-Jewelry-2.jpg" class="item"  onclick="changeSlide(+1)"/>
                 <img src="assets/jewelry/HBH-Jewelry-1.jpg" class="item"  onclick="changeSlide(+1)"/>
  
-
-
                 <a onclick="closeSlideshow()">Close</a>
             </div>
 
     
   </body>
   <!-- <script type="text/javascript">
-        var image = document.getElementsByClassName('thumbnail');
+        var image = document.getElementsByClassName('');
         new simpleParallax(image);
         delay: .6
     </script> -->
     <script type="text/javascript">
-        function custom(event){
-          var el = document.getElementById("hov");
-          el.style.top = event.clientY + "px";
-          el.style.left = event.clientX + "px";
-            }
+        const gra = function(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
-        document.getElementById("main").addEventListener('mousemove', custom);
+const gri = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const init = function(){
+  let items = document.querySelectorAll('li');
+  for (let i = 0; i < items.length; i++){
+    items[i].style.minHeight = gra(20,30) + 'vh';
+    items[i].style.background = randomColor({luminosity: 'light'});
+  }
+  
+  cssScrollSnapPolyfill()
+}
+init();
     </script>
 </html>
