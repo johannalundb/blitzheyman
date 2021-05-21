@@ -36,21 +36,11 @@ i {
 
 .menu .grid-item {
   height: 0;
-}
-
-.startpage {
-  margin-top: 35vw;
-}
-
-#heart {
-  width: 30px;
-  margin-top: -10px;
-  height: auto;
-  box-shadow: none;
+  line-height: 14px;
 }
 
 .menu a {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   text-decoration: none;
   color: black;
 }
@@ -64,6 +54,88 @@ i {
   color: rgb(29, 0, 218);
   text-decoration: underline;
 }
+
+
+#small-heart {
+  position: fixed;
+  z-index: 150;
+}
+  #small-heart #desktop-heart {
+    width: 8vw;
+    top: 20px;
+    position: absolute;
+    left: 46vw;
+  }
+
+  #small-heart #mobile-heart {
+    display: none;
+    width: 16vw;
+    top: 20px;
+    position: absolute;
+    left: 42vw;
+  }
+
+#mobile-menu-parent {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  visibility: hidden;
+  position: fixed;
+}
+  #mobile-menu-parent img {
+    width: 100vw;
+  }
+#mobile-menu {
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  position: absolute;
+  margin-top: 22px;
+}
+
+  #mobile-menu a {
+    display: block;
+    font-size: 20pt;
+    text-decoration: none;
+    color: black;
+    width: 100vw;
+    line-height: 3.5;
+    text-shadow: 0 0 10px blue;
+  }
+
+#mobile-menu-parent-startpage #mobile-menu-parent {
+  visibility: hidden;
+}
+
+
+/*STARTPAGE*/
+
+#startpage-container {
+  height: 100vh;
+  width: 100vw;
+}
+  
+  #startpage-container .menu {
+    margin: -20px 0 0 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+#ornament {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
+  #ornament img {
+    width: 80vw;
+  }
 
 /*SKY-BACKGROUND*/
 #background-container {
@@ -93,25 +165,7 @@ i {
   display: none;
 }
 
-/*START-PAGE*/
 
-#ornament img{
-  position: absolute;
-  z-index: 20;
-  width: 90vw;
-  left: 5vw;
-  top: 20vh
-}
-
-#enter-text {
-  width: 66vw;
-  position: absolute;
-  top: 17.5vw;
-  text-align: center;
-  margin-left:17vw;
-  padding-bottom: 200px;
-  text-shadow: 0 0 10px blue;
-}
 
 /*SLIDE-SHOW*/
 
@@ -138,7 +192,7 @@ i {
   left: 50vw;
   top: 5em;
   transform: translate(-50%, 0);
-  max-width: calc(100vw - 2em);
+  max-width: calc(100vw - 10em);
   max-height: 75vh;
   cursor: crosshair;
   box-shadow: 0px 0px 100px #cbff00;
@@ -151,7 +205,7 @@ i {
   left: 50%;
   transform: translate(-50%, 0);
   width: 100vw;
-  height: 20vh;
+  height: 22vh;
   text-align: center;
   line-height: 20vh;
   cursor: pointer;
@@ -275,9 +329,6 @@ p {
   text-shadow: 0 0 10px blue;
 }
 
-#text-container #intro {
-  /*font-size: 30px;*/
-}
 
 #text-container h2 {
   font-size: 27px;
@@ -294,21 +345,34 @@ p {
 }
 
 #text-container a:hover {
-  color: blue;
+  /*color: blue;*/
+  background:#dfff5e;
 }
 
-#copyright p {
+#text-container #footer-text{
+  font-size: 11pt;
+  margin:20px 0 60px 0;
+}
+
+#objects-copyright p, #jewelry-copyright p {
   font-size: 11pt;
   text-align: center;
 }
 
-#copyright {
+#objects-copyright, #jewelry-copyright {
   position: absolute;
   width: 100vw;
   height: 40px;
   display: block;
-  top:calc(16.667vw*12);
 }
+
+  #jewelry-copyright {
+    top:calc(16.667vw*12);
+  }
+
+  #objects-copyright {
+    top:calc(16.667vw*14);
+  }
 
 #text-container img {
   /*width: 50%;*/
@@ -366,13 +430,22 @@ p {
 
   }
 
-  .image-description-left, .image-description-right, .empty, .sky-background-medium {
+  .image-description-left, .image-description-right, .empty, .sky-background-medium, #copyright, .menu, #desktop-heart, #startpage-container {
     display: none;
-}
+  }
+  
+  #small-heart #mobile-heart {
+    display: block;
+  }
 
-#copyright {
-  display: none;
-}
+  #mobile-menu-parent-startpage #mobile-menu-parent {
+  visibility: visible;
+  }
+
+  #text-container {
+  top: 27.5vw;
+  }
+
 
 
 }
@@ -397,24 +470,29 @@ p {
   }
 
   .menu {
- left: 12.5vw;
+    left: 12.5vw;
     width: 75vw;
     grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
     grid-template-rows: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
-}
+  }
 
-.menu a {
-  font-size: 1vw;
-}
 
-#text-container {
-  width: 50vw;
-  top: 16.667vw;
-  margin-left:25vw;
-}
-#copyright {
-top:calc(12.5vw*12);
-}
+  #text-container {
+    width: 50vw;
+    top: 16.667vw;
+    margin-left:25vw;
+  }
+
+  #jewelry-copyright {
+  top:calc(12.5vw*12);
+  }
+  #objects-copyright {
+  top:calc(12.5vw*14);
+  }
+
+  #ornament img {
+    width: 65vw;
+  }
 
 }
 

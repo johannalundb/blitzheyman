@@ -28,12 +28,27 @@
      <div id="amadeus">
     <div class="menu">
         <div class="grid-item"></div>
-        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br><img src="assets/heart.png" id="heart"></a></div>
+        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br></a></div>
         <div class="grid-item"><a href="jewelry.html" class="active">Jewelry</a></div>
-        <div class="grid-item"><a href="sculpture.html">Sculpture</a></div>
+        <div class="grid-item"><a href="objects.html">Objects</a></div>
         <div class="grid-item"><a href="about.html">About</a></div>
         <div class="grid-item"></div>
       </div>
+
+      <div id="small-heart">
+          <img onclick="mobileMenu()" src="assets/heart.png" id="mobile-heart">
+          <a href="index.html"><img src="assets/heart.png" id="desktop-heart"></a>
+      </div>
+
+      <div id="mobile-menu-parent">
+        <img src="assets/bg/Himmel mobil.jpeg" loading="lazy" src="assets/bg/Himmel mobil.jpeg">
+          <div id="mobile-menu">
+            <a href="index.html">Hannah Blitz Heyman<br></a>
+            <a href="jewelry.html">Jewelry</a>
+            <a href="objects.html">Objects</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
 
       <div class="grid-container ">
         <div class="grid-item empty"></div>
@@ -340,13 +355,13 @@
         <!-- ::::::::COLUMN 4:::::::: -->
 
         <p class="mobile-text">
-                <span class="title">Earrings <br> (part of bachelor project)</span>  
+                <span class="title">Earrings <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, resin, glue and stainless steel</span>
                 <span class="year">2019</span>
         </p>
 
         <div class="grid-item empty" ><p class="image-description-right" onclick="select(17)">
-                <span class="title">Earrings <br> (part of bachelor project)</span>  
+                <span class="title">Earrings <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, resin, glue and stainless steel</span>
                 <span class="year">2019</span>
             </p></div>
@@ -354,14 +369,14 @@
         <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-8.jpg" onclick="select(18)"></div>
 
         <p class="mobile-text">
-                <span class="title">Bracelet <br> (part of bachelor project)</span>  
+                <span class="title">Bracelet <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, fresh water pearl and glue</span>
                 <span class="year">2019</span>
         </p>
 
         <!-- ::::::::COLUMN 6:::::::: -->
         <div class="grid-item empty" ><p class="image-description-right" onclick="select(18)">
-                <span class="title">Bracelet <br> (part of bachelor project)</span>  
+                <span class="title">Bracelet <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, fresh water pearl and glue</span>
                 <span class="year">2019</span>
             </p></div>
@@ -370,7 +385,7 @@
 
         <!-- ::::::::COLUMN 1:::::::: -->
         <div class="grid-item empty" ><p class="image-description-left" onclick="select(19)">
-                <span class="title">Rings <br> (part of bachelor project)</span>  
+                <span class="title">Rings <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, glass and resin</span>
                 <span class="year">2019</span>
             </p></div>
@@ -378,7 +393,7 @@
         <div class="grid-item"><img loading="lazy" src="assets/jewelry/HBH-Jewelry-7.jpg" onclick="select(19)"></div>
 
         <p class="mobile-text">
-                <span class="title">Rings <br> (part of bachelor project)</span>  
+                <span class="title">Rings <br> (part of Bachelor project)</span>  
                 <span class="material">Pewter, glass and resin</span>
                 <span class="year">2019</span>
         </p>
@@ -502,7 +517,7 @@
 
       </div>
 
-      <div id="copyright">
+      <div id="jewelry-copyright">
           <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Hannah Blitz Heyman</p>
         </div>
 
@@ -543,29 +558,17 @@
 
     
   </body>
-  <!-- <script type="text/javascript">
-        var image = document.getElementsByClassName('');
-        new simpleParallax(image);
-        delay: .6
-    </script> -->
-    <script type="text/javascript">
-        const gra = function(min, max) {
-    return Math.random() * (max - min) + min;
-}
-
-const gri = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-const init = function(){
-  let items = document.querySelectorAll('li');
-  for (let i = 0; i < items.length; i++){
-    items[i].style.minHeight = gra(20,30) + 'vh';
-    items[i].style.background = randomColor({luminosity: 'light'});
-  }
   
-  cssScrollSnapPolyfill()
-}
-init();
+
+  <script type="text/javascript">
+        function mobileMenu() {
+          var x = document.getElementById("mobile-menu-parent");
+          if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+          } else {
+            x.style.visibility = "visible";
+          }
+        }
+
     </script>
 </html>

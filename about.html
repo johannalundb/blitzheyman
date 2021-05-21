@@ -24,12 +24,27 @@
 
     <div class="menu">
         <div class="grid-item"></div>
-        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br><img src="assets/heart.png" id="heart"></a></div>
+        <div class="grid-item"><a href="index.html">Hannah Blitz Heyman<br></a></div>
         <div class="grid-item"><a href="jewelry.html">Jewelry</a></div>
-        <div class="grid-item"><a href="sculpture.html">Sculpture</a></div>
+        <div class="grid-item"><a href="objects.html">Objects</a></div>
         <div class="grid-item"><a href="about.html" class="active">About</a></div>
         <div class="grid-item"></div>
       </div>
+
+      <div id="small-heart">
+          <img onclick="mobileMenu()" src="assets/heart.png" id="mobile-heart">
+          <a href="index.html"><img src="assets/heart.png" id="desktop-heart"></a>
+      </div>
+
+      <div id="mobile-menu-parent">
+        <img src="assets/bg/Himmel mobil.jpeg" loading="lazy" src="assets/bg/Himmel mobil.jpeg">
+          <div id="mobile-menu">
+            <a href="index.html">Hannah Blitz Heyman<br></a>
+            <a href="jewelry.html">Jewelry</a>
+            <a href="objects.html">Objects</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
 
       <div id="text-container">
         <p id="intro">Hannah Blitz Heyman’s practice is material based, primarily focusing on metal. <br>
@@ -37,7 +52,6 @@
         <img id="ornament-1" src="assets/ornament/Figur 18-drop shadow.png">
         <h2>Contact</h2>
         <p>Date of birth 1994<br>
-        +4673 591 90 81<br>
         <a href="mailto:heymanhannah@gmail.com">heymanhannah@gmail.com</a><br>
         <a href="https://www.instagram.com/blitzheyman/" target="_blank">Instagram</a>
         </p> 
@@ -71,4 +85,16 @@
 
     
   </body>
+
+  <script type="text/javascript">
+        function mobileMenu() {
+          var x = document.getElementById("mobile-menu-parent");
+          if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+          } else {
+            x.style.visibility = "visible";
+          }
+        }
+
+    </script>
 </html>
