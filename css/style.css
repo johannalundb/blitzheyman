@@ -438,7 +438,7 @@ p {
     margin-left: 5vw;
 }
 
-  .image-description-left, .image-description-right, .empty, .sky-background-medium, #objects-copyright, #jewelry-copyright, .menu, #desktop-heart, #startpage-container {
+  .image-description-left, .image-description-right, .empty, .sky-background-medium, #objects-copyright, #jewelry-copyright, .menu, #desktop-heart, #startpage-container, .mobile-break-none {
     display: none;
   }
   
