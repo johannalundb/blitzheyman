@@ -510,5 +510,10 @@ p {
     width: 65vw;
   }
 
+    #small-heart #desktop-heart {
+    width: 6vw;
+    left: 47vw;
+  }
+
 }
 
