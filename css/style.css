@@ -428,8 +428,15 @@ p {
     line-height: 1;
     text-align: center;
     margin-top: -40px
-
   }
+
+  #text-container p {
+    font-size: 4.1vw;
+}
+#text-container {
+    width: 90vw;
+    margin-left: 5vw;
+}
 
   .image-description-left, .image-description-right, .empty, .sky-background-medium, #objects-copyright, #jewelry-copyright, .menu, #desktop-heart, #startpage-container {
     display: none;
