@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
-  function custom(event){
-  var el = document.getElementById("hov");
-  el.style.top = event.clientY + "px";
-  el.style.left = event.clientX + "px";
-    }
-
-document.getElementById("main").addEventListener('mousemove', custom);
+  function mobileMenu() {
+  var x = document.getElementById("mobile-menu-parent");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 })
